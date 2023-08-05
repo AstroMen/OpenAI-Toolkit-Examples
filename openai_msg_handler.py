@@ -15,8 +15,6 @@ class MessageHandler:
     def append_message(self, role, content):
         new_msg = self.__generate_message(role, content)
         self.messages.append(new_msg)
-        # message_list.append(new_msg)
-        # return message_list
 
     def generate_and_append_message(self, role, content):
         self.append_message(role, content)
@@ -35,7 +33,7 @@ class MessageHandler:
                 messages=self.messages,
                 max_tokens=max_tokens,
                 temperature=temperature,
-                n=resp_cnt,  # 对每条prompt生成多少条结果
+                n=resp_cnt,  # How many results are generated for each prompt
                 stream=False,  # Whether to stream partial results
                 stop=stop_sentence,
                 presence_penalty=presence_penalty
