@@ -15,7 +15,7 @@ This repository contains a comprehensive toolkit for OpenAI processing with appl
 Clone this repository to your local machine and navigate to the project directory:
 
 ```bash
-git clone https://github.com/your-github-username/OpenAI-Toolkit-Examples.git
+git clone https://github.com/AstroMen/OpenAI-Toolkit-Examples.git
 cd OpenAI-Toolkit-Examples
 ```
 
