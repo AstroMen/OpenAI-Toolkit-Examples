@@ -81,15 +81,18 @@ After a successful fine-tuning, the status will be printed to the console, showi
   file_path = './audio/my_video.mp3'
   processor.transcribe(file_path)
   corrected_text = processor.correct_transcript(0, file_path)
-  print(f'corrected_text: 
-{corrected_text}')
+  print(f'corrected_text: {corrected_text}')
   ```
 
 * `prompt_preprocessor.py`: Use this module for preprocessing prompts for text generation. The `image_prompts.csv` file should have the following format: the first line is the prompt, the second line starts with "Title: " and contains the story title, and the subsequent lines contain the story plot with numbers.
 
 * `openai_msg_handler.py`: This module handles messages in the context of an OpenAI chat.
 
+* `prompt_preprocessor.py`: This module is used for preprocessing prompts for text generation. It provides different prompt examples using both zero-shot and few-shot learning techniques. The module can also simulate dialogues with different AI roles interacting with each other. The `image_prompts.csv` file, which is used by this module, should have the following format: the first line is the prompt, the second line starts with "Title: " and contains the story title, and the subsequent lines contain the story plot with numbers.
+
 * `utils/`: This directory contains utility functions and classes that support the other modules.
+
+* `data/`: This directory is used to store datasets and other relevant data files required for the functioning of the various modules in this toolkit.
 
 For detailed usage of each module, please refer to the comments and documentation in the respective Python files.
 
