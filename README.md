@@ -45,7 +45,7 @@ This toolkit contains several modules. Here's how to use them:
   - `-p`: Path to the preprocessed data file.
   - `-f`: If specified, finetuning is needed. Default is False.
 
-After a successful fine-tuning, the status will be printed to the console, showing the fine-tuning process and the result. For example:
+  After a successful fine-tuning, the status will be printed to the console, showing the fine-tuning process and the result. For example:
 
   ```bash
   openai api fine_tunes.follow -i  <finetune_id>
